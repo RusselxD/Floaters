@@ -68,7 +68,7 @@ public class EmojiPanel extends JPanel implements MouseListener{
 
         if(floatingEmojis.isEmpty()) return;
 
-        Emoji emoji = floatingEmojis.getFirst();
+        Emoji emoji = floatingEmojis.get(0);
         floatingEmojis.remove(emoji);
         emoji.remove();
     }
